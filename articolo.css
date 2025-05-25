@@ -155,3 +155,10 @@ body {
     margin-left: 20px;
   }
 }
+
+.schede-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
