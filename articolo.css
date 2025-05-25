@@ -1,157 +1,157 @@
 /* Global Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-    margin: 0;
-    padding: 0;
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
 /* Container for the article */
 .article-container {
-    width: 80%;
-    margin: 20px auto;
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Title */
 .article-title {
-    font-size: 2.5em;
-    color: #333;
-    text-align: center;
-    margin-bottom: 10px;
-    font-weight: bold;
+  font-size: 2.5em;
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
 /* Subtitle */
 .article-subtitle {
-    font-size: 1.5em;
-    color: #666;
-    text-align: center;
-    margin-bottom: 20px;
-    font-style: italic;
+  font-size: 1.5em;
+  color: #666;
+  text-align: center;
+  margin-bottom: 20px;
+  font-style: italic;
 }
 
 /* Quote */
 .article-quote {
-    font-style: italic;
-    font-size: 1.em;
-    color: #555;
-    margin: 20px 0;
-    text-align: center;
-    background-color: #e9ecef; /* Soft background */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  font-style: italic;
+  font-size: 1em;
+  color: #555;
+  margin: 20px 0;
+  text-align: center;
+  background-color: #e9ecef; /* Soft background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 /* Editorial Section */
 .editorial {
-    font-size: 1.2em;
-    color: #444;
-    margin: 20px 0;
-    background-color: #f9f9f9; /* Light gray background */
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
+  font-size: 1.2em;
+  color: #444;
+  margin: 20px 0;
+  background-color: #f9f9f9; /* Light gray background */
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
 }
 
 /* Main Article */
 .article-text {
-    font-size: 1.1em;
-    color: #333;
-    margin-bottom: 30px;
-    line-height: 1.8;
+  font-size: 1.1em;
+  color: #333;
+  margin-bottom: 30px;
+  line-height: 1.8;
 }
 
 /* Conclusion */
 .conclusions {
-    font-size: 1.1em;
-    color: #333;
-    background-color: #f9f9f9; /* Very light gray background */
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
+  font-size: 1.1em;
+  color: #333;
+  background-color: #f9f9f9; /* Very light gray background */
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
 }
 
 /* Signature */
 .signature {
-    font-size: 1em;
-    font-style: italic;
-    color: #2d6a4f;
-    text-align: center;
-    margin-top: 30px;
-    padding: 20px;
-    background-color: #f1f3f5; /* Soft background to differentiate */
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
+  font-size: 1em;
+  font-style: italic;
+  color: #2d6a4f;
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f1f3f5; /* Soft background to differentiate */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
 }
 
 /* Team Name (the final signature) */
 .team-name {
-    font-size: 1.em;
-    font-weight: bold;
-    color: #2d6a4f;
-    margin-top: 15px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #2d6a4f;
+  margin-top: 15px;
 }
 
 /* Scheda tecnica - migliorata e modulare */
 .scheda {
-    font-size: 1.1em;
-    color: #333;
-    margin: 40px auto;
-    background-color: #ffffff;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    width: 80%;
+  font-size: 1.1em;
+  color: #333;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
 }
 
 .scheda h2 {
-    font-size: 1.6em;
-    color: #2d6a4f;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #2d6a4f;
-    padding-bottom: 5px;
+  font-size: 1.6em;
+  color: #2d6a4f;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #2d6a4f;
+  padding-bottom: 5px;
 }
 
 .scheda .field {
-    margin-bottom: 12px;
-    line-height: 1.6;
+  margin-bottom: 12px;
+  line-height: 1.6;
 }
 
 .scheda .label {
-    font-weight: bold;
-    color: #444;
-    display: inline-block;
-    width: 250px;
-    vertical-align: top;
+  font-weight: bold;
+  color: #444;
+  display: inline-block;
+  width: 250px;
+  vertical-align: top;
 }
 
 .scheda ul {
-    margin: 5px 0 0 260px; /* indent list content after the label */
-    padding-left: 0;
-    list-style-type: disc;
+  margin: 5px 0 0 260px; /* indent list content after the label */
+  padding-left: 0;
+  list-style-type: disc;
 }
 
 @media screen and (max-width: 768px) {
-    .scheda {
-        width: 95%;
-        padding: 20px;
-    }
+  .scheda {
+    width: 95%;
+    padding: 20px;
+  }
 
-    .scheda .label {
-        display: block;
-        width: 100%;
-        margin-bottom: 5px;
-    }
+  .scheda .label {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+  }
 
-    .scheda ul {
-        margin-left: 20px;
-    }
+  .scheda ul {
+    margin-left: 20px;
+  }
 }
