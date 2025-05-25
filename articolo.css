@@ -1,39 +1,18 @@
-:root {
-  --primary: #2d6a4f;      /* verde scuro speleo */
-  --accent:  #d4953d;      /* ocra, argilla */
-  --bg-light: #f4f4f4;
-  --bg-white: #ffffff;
-  --text:     #333333;
-  --muted:    #666666;
-  --border:   #cccccc;
-}
-
 /* Global Styles */
 body {
-  font-family: "Merriweather", serif;
-  background-color: var(--bg-light);
-  color: var(--text);
+  font-family: "Arial", sans-serif;
   line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
   margin: 0;
   padding: 0;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-a {
-  color: var(--primary);
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
-a:hover {
-  color: var(--accent);
 }
 
 /* Container for the article */
 .article-container {
   width: 80%;
   margin: 20px auto;
-  background-color: var(--bg-white);
+  background-color: white;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -41,19 +20,17 @@ a:hover {
 
 /* Title */
 .article-title {
-  font-family: "Montserrat", sans-serif;
   font-size: 2.5em;
-  color: var(--primary);
+  color: #333;
   text-align: center;
   margin-bottom: 10px;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 /* Subtitle */
 .article-subtitle {
-  font-family: "Montserrat", sans-serif;
   font-size: 1.5em;
-  color: var(--muted);
+  color: #666;
   text-align: center;
   margin-bottom: 20px;
   font-style: italic;
@@ -61,135 +38,111 @@ a:hover {
 
 /* Quote */
 .article-quote {
-  font-family: "Merriweather", serif;
-  position: relative;
   font-style: italic;
   font-size: 1em;
-  color: var(--text);
+  color: #555;
   margin: 20px 0;
   text-align: center;
-  background-color: #e9ecef;
+  background-color: #e9ecef; /* Soft background */
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-.article-quote::before {
-  content: url('quotes-icon.svg'); /* icona pattern */
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  opacity: 0.3;
-}
-
-/* Separatore decorativo tra paragrafi */
-.article-text p + p {
-  position: relative;
-  padding-top: 20px;
-}
-.article-text p + p::before {
-  content: "";
-  display: block;
-  width: 50px;
-  height: 2px;
-  background: var(--accent);
-  margin: 0 auto 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 /* Editorial Section */
 .editorial {
-  font-family: "Merriweather", serif;
   font-size: 1.2em;
-  color: var(--text);
+  color: #444;
   margin: 20px 0;
-  background-color: #f9f9f9;
+  background-color: #f9f9f9; /* Light gray background */
   padding: 25px;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
 }
 
 /* Main Article */
 .article-text {
-  font-family: "Merriweather", serif;
   font-size: 1.1em;
-  color: var(--text);
+  color: #333;
   margin-bottom: 30px;
   line-height: 1.8;
 }
 
 /* Conclusion */
 .conclusions {
-  font-family: "Merriweather", serif;
   font-size: 1.1em;
-  color: var(--text);
-  background-color: #f9f9f9;
+  color: #333;
+  background-color: #f9f9f9; /* Very light gray background */
   padding: 20px;
   margin: 20px 0;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
 }
 
 /* Signature */
 .signature {
-  font-family: "Montserrat", sans-serif;
   font-size: 1em;
   font-style: italic;
-  color: var(--primary);
+  color: #2d6a4f;
   text-align: center;
   margin-top: 30px;
   padding: 20px;
-  background-color: #f1f3f5;
+  background-color: #f1f3f5; /* Soft background to differentiate */
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
 }
 
+/* Team Name (the final signature) */
 .team-name {
-  font-family: "Montserrat", sans-serif;
   font-size: 1em;
   font-weight: bold;
-  color: var(--primary);
+  color: #2d6a4f;
   margin-top: 15px;
 }
 
-/* Scheda tecnica migliorata e modulare */
+/* Scheda tecnica - migliorata e modulare */
 .scheda {
-  font-family: "Merriweather", serif;
   font-size: 1.1em;
-  color: var(--text);
+  color: #333;
   margin: 40px auto;
-  background-color: var(--bg-white);
+  background-color: #ffffff;
   padding: 25px;
-  border-top: 1px solid var(--border);
+  border-top: 1px solid #ccc; /* Linea divisoria tra schede */
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   width: 80%;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out; /* Transizione hover */
 }
+
 .scheda:hover {
   transform: translateY(-3px);
 }
+
 .scheda h2 {
-  font-family: "Montserrat", sans-serif;
   font-size: 1.6em;
-  color: var(--primary);
+  color: #2d6a4f;
   margin-bottom: 20px;
-  border-bottom: 2px solid var(--primary);
+  border-bottom: 2px solid #2d6a4f;
   padding-bottom: 5px;
 }
+
 .scheda .field {
-  margin-bottom: 20px;
+  margin-bottom: 16px; /* Aumentato lo spacing verticale */
   line-height: 1.6;
-  word-wrap: break-word;
+  word-wrap: break-word; /* Evita overflow su contenuti lunghi */
 }
+
 .scheda .label {
   font-weight: bold;
-  color: var(--text);
+  color: #444;
   display: inline-block;
   width: 250px;
   vertical-align: top;
-  word-wrap: break-word;
+  word-wrap: break-word; /* Evita overflow su etichette lunghe */
 }
+
 .scheda ul {
-  margin: 5px 0 0 260px;
+  margin: 5px 0 0 260px; /* indent list content after the label */
   padding-left: 0;
   list-style-type: disc;
 }
@@ -199,14 +152,17 @@ a:hover {
     width: 95%;
     padding: 20px;
   }
+
   .scheda .label {
     display: block;
     width: 100%;
     margin-bottom: 5px;
   }
+
   .scheda .field {
-    margin-bottom: 24px;
+    margin-bottom: 20px; /* Maggior spazio per mobile */
   }
+
   .scheda ul {
     margin-left: 20px;
   }
