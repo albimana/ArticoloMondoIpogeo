@@ -1,18 +1,39 @@
+:root {
+  --primary: #2d6a4f;      /* verde scuro speleo */
+  --accent:  #d4953d;      /* ocra, argilla */
+  --bg-light: #f4f4f4;
+  --bg-white: #ffffff;
+  --text:     #333333;
+  --muted:    #666666;
+  --border:   #cccccc;
+}
+
 /* Global Styles */
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "Merriweather", serif;
+  background-color: var(--bg-light);
+  color: var(--text);
   line-height: 1.6;
-  background-color: #f4f4f4;
-  color: #333;
   margin: 0;
   padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--accent);
 }
 
 /* Container for the article */
 .article-container {
   width: 80%;
   margin: 20px auto;
-  background-color: white;
+  background-color: var(--bg-white);
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -20,17 +41,19 @@ body {
 
 /* Title */
 .article-title {
+  font-family: "Montserrat", sans-serif;
   font-size: 2.5em;
-  color: #333;
+  color: var(--primary);
   text-align: center;
   margin-bottom: 10px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 /* Subtitle */
 .article-subtitle {
+  font-family: "Montserrat", sans-serif;
   font-size: 1.5em;
-  color: #666;
+  color: var(--muted);
   text-align: center;
   margin-bottom: 20px;
   font-style: italic;
@@ -38,111 +61,135 @@ body {
 
 /* Quote */
 .article-quote {
+  font-family: "Merriweather", serif;
+  position: relative;
   font-style: italic;
   font-size: 1em;
-  color: #555;
+  color: var(--text);
   margin: 20px 0;
   text-align: center;
-  background-color: #e9ecef; /* Soft background */
+  background-color: #e9ecef;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.article-quote::before {
+  content: url('quotes-icon.svg'); /* icona pattern */
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  opacity: 0.3;
+}
+
+/* Separatore decorativo tra paragrafi */
+.article-text p + p {
+  position: relative;
+  padding-top: 20px;
+}
+.article-text p + p::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background: var(--accent);
+  margin: 0 auto 10px;
 }
 
 /* Editorial Section */
 .editorial {
+  font-family: "Merriweather", serif;
   font-size: 1.2em;
-  color: #444;
+  color: var(--text);
   margin: 20px 0;
-  background-color: #f9f9f9; /* Light gray background */
+  background-color: #f9f9f9;
   padding: 25px;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Main Article */
 .article-text {
+  font-family: "Merriweather", serif;
   font-size: 1.1em;
-  color: #333;
+  color: var(--text);
   margin-bottom: 30px;
   line-height: 1.8;
 }
 
 /* Conclusion */
 .conclusions {
+  font-family: "Merriweather", serif;
   font-size: 1.1em;
-  color: #333;
-  background-color: #f9f9f9; /* Very light gray background */
+  color: var(--text);
+  background-color: #f9f9f9;
   padding: 20px;
   margin: 20px 0;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Signature */
 .signature {
+  font-family: "Montserrat", sans-serif;
   font-size: 1em;
   font-style: italic;
-  color: #2d6a4f;
+  color: var(--primary);
   text-align: center;
   margin-top: 30px;
   padding: 20px;
-  background-color: #f1f3f5; /* Soft background to differentiate */
+  background-color: #f1f3f5;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Team Name (the final signature) */
 .team-name {
+  font-family: "Montserrat", sans-serif;
   font-size: 1em;
   font-weight: bold;
-  color: #2d6a4f;
+  color: var(--primary);
   margin-top: 15px;
 }
 
-/* Scheda tecnica - migliorata e modulare */
+/* Scheda tecnica migliorata e modulare */
 .scheda {
+  font-family: "Merriweather", serif;
   font-size: 1.1em;
-  color: #333;
+  color: var(--text);
   margin: 40px auto;
-  background-color: #ffffff;
+  background-color: var(--bg-white);
   padding: 25px;
-  border-top: 1px solid #ccc; /* Linea divisoria tra schede */
+  border-top: 1px solid var(--border);
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   width: 80%;
-  transition: transform 0.2s ease-in-out; /* Transizione hover */
+  transition: transform 0.2s ease-in-out;
 }
-
 .scheda:hover {
   transform: translateY(-3px);
 }
-
 .scheda h2 {
+  font-family: "Montserrat", sans-serif;
   font-size: 1.6em;
-  color: #2d6a4f;
+  color: var(--primary);
   margin-bottom: 20px;
-  border-bottom: 2px solid #2d6a4f;
+  border-bottom: 2px solid var(--primary);
   padding-bottom: 5px;
 }
-
 .scheda .field {
-  margin-bottom: 16px; /* Aumentato lo spacing verticale */
+  margin-bottom: 20px;
   line-height: 1.6;
-  word-wrap: break-word; /* Evita overflow su contenuti lunghi */
+  word-wrap: break-word;
 }
-
 .scheda .label {
   font-weight: bold;
-  color: #444;
+  color: var(--text);
   display: inline-block;
   width: 250px;
   vertical-align: top;
-  word-wrap: break-word; /* Evita overflow su etichette lunghe */
+  word-wrap: break-word;
 }
-
 .scheda ul {
-  margin: 5px 0 0 260px; /* indent list content after the label */
+  margin: 5px 0 0 260px;
   padding-left: 0;
   list-style-type: disc;
 }
@@ -152,17 +199,14 @@ body {
     width: 95%;
     padding: 20px;
   }
-
   .scheda .label {
     display: block;
     width: 100%;
     margin-bottom: 5px;
   }
-
   .scheda .field {
-    margin-bottom: 20px; /* Maggior spazio per mobile */
+    margin-bottom: 24px;
   }
-
   .scheda ul {
     margin-left: 20px;
   }
