@@ -219,7 +219,6 @@ a:hover {
   color: var(--primary); /* oppure personalizza con un colore specifico */
   font-family: 'Source Serif 4', Georgia, serif;
 }
-
 .fof-foto {
   padding: 40px 20px;
   background-color: #fcf9f2;
@@ -236,7 +235,14 @@ a:hover {
 }
 .foto-container figure {
   margin: 0;
-  max-width: 800px;
+  max-width: 400px;
+  transition: transform 0.3s ease;
+}
+.foto-container figure:hover {
+  transform: scale(1.05);
+}
+.foto-container a {
+  display: block;
 }
 .foto-container img {
   width: 100%;
