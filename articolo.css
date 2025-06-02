@@ -227,11 +227,13 @@ a:hover {
 
 /* Sezione Immagini */
 .fof-foto {
+  width: 80%;
+  max-width: 960px;
+  margin: 50px auto;
   padding: 50px 20px;
   background-color: var(--bg-white);
   border-top: 2px solid var(--border);
   border-bottom: 2px solid var(--border);
-  margin: 50px 0;
 }
 
 .foto-container {
