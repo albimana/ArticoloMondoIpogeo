@@ -114,8 +114,8 @@ a:hover {
 
 .article-signature {
   font-style: italic;
-  font-size: 0.9em;
-  color: #888888;
+  font-size: 0.8em;
+  color: var(--muted);
   margin-top: -5px;
   margin-bottom: 30px;
   text-align: left;
