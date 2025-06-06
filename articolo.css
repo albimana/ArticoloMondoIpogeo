@@ -103,49 +103,38 @@ a:hover {
 /* Subtitle */
 
 .article-subtitle {
-
   font-family: Arial, sans-serif;
-
   font-size: 1.5em;
-
   color: var(--muted);
-
   text-align: center;
-
   margin-bottom: 20px;
-
   font-style: italic;
 
 }
 
-
+.article-signature {
+  font-style: italic;
+  font-size: 0.9em;
+  color: #888888;
+  margin-top: -5px;
+  margin-bottom: 30px;
+  text-align: left;
+}
 
 /* Quote */
 
 .article-quote {
-
   font-family: Arial, sans-serif;
-
   position: relative;
-
   font-style: italic;
-
   font-size: 1em;
-
   color: var(--text);
-
   margin: 20px 0;
-
   text-align: center;
-
   background-color: #e9ecef;
-
   padding: 20px;
-
   border-radius: 8px;
-
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-
 }
 
 .article-quote::before {
